@@ -74,6 +74,7 @@
 #hero .btn {
     background-color: #5CB85F;
     border: none;
+    font-size: 20px;
 }
 
 #hero .btn:hover {
