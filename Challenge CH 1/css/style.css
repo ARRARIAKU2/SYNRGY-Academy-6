@@ -80,3 +80,50 @@
 #hero .btn:hover {
     background-color: #72e276;
 }
+
+#our-service {
+    margin: 150px 0;
+}
+
+#our-service h2 {
+    font-size: 28px;
+    padding: 25px 0;
+}
+
+#our-service p {
+    font-size: 18px;
+}
+
+#our-service .service p {
+    padding: 5px 0;
+}
+
+#why-us {
+    margin: 150px 0;
+}
+
+#why-us h2 {
+    font-size: 28px;
+}
+
+#why-us .card-pro {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#why-us .card-content {
+    padding: 20px;
+}
+
+#why-us img {
+    padding: 10px 0;
+}
+
+#why-us h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#why-us .card-content p {
+    p
+}
