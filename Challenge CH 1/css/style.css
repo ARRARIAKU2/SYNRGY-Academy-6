@@ -10,6 +10,10 @@
     padding: 25px 0;
 }
 
+#header .container {
+    padding: auto;
+}
+
 #header .blue {
     background-color: #091B6F;
     border-radius: 5px;
@@ -19,11 +23,11 @@
 
 #header .header-right {
     float: right;
-    padding: 25px 0;
+    padding-top: 28px;
 }
 
 #header .header-right a {
-    padding: 0 25px;
+    padding: 25px;
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -33,14 +37,17 @@
     color: #3C3C3C;
 }
 
-#header .btn {
+#header span {
     background-color: #5CB85F;
-    border: none;
+    padding: 7px 14px;
+    border-radius: 3px;
+    color: white;
 }
 
-#header .btn:hover {
+#header span:hover {
     background-color: #72e276;
 }
+
 
 #hero {
     background-color: #F1F3FF;
