@@ -1,0 +1,74 @@
+#header {
+    background-color: #F1F3FF;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+}
+
+#header .header-left {
+    float: left;
+    padding: 25px 0;
+}
+
+#header .blue {
+    background-color: #091B6F;
+    border-radius: 5px;
+    height: 34px;
+    width: 100px;
+}
+
+#header .header-right {
+    float: right;
+    padding: 25px 0;
+}
+
+#header .header-right a {
+    padding: 0 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#header .header-right a:hover {
+    color: #3C3C3C;
+}
+
+#header .btn {
+    background-color: #5CB85F;
+    border: none;
+}
+
+#header .btn:hover {
+    background-color: #72e276;
+}
+
+#hero {
+    background-color: #F1F3FF;
+    height: 650px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+#hero .text {
+    padding: 100px 200px;
+}
+
+#hero .title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 18px;
+    padding: 20px 0;
+    width: 500px;
+}
+
+#hero .btn {
+    background-color: #5CB85F;
+    border: none;
+}
+
+#hero .btn:hover {
+    background-color: #72e276;
+}

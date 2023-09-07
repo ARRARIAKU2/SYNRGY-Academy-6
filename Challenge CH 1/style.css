@@ -1,0 +1,44 @@
+#header {
+    background-color: #CFD4ED;
+    height: 90px;
+    width: 100%;
+}
+
+#header .header-left {
+    float: left;
+    padding: 25px 0;
+}
+
+#header .blue {
+    background-color: #091B6F;
+    border-radius: 5px;
+    height: 34px;
+    width: 100px;
+}
+
+#header .header-right {
+    float: right;
+    padding: 25px 0;
+}
+
+#header .header-right a {
+    padding: 0 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* #header .header-right a:hover {
+    color: blue;
+} */
+
+/* #header .btn {
+    background-color: #5CB85F;
+    border: none;
+} */
+
+#hero {
+    background-color: #CFD4ED;
+    height: 90px;
+    width: 100%;
+}
