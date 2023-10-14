@@ -14,43 +14,78 @@
     <header>
         <section id="header">
             <div class="container">
-                <div class="header-left">
-                    <div class="blue"></div>
-                </div>
-                <div class="header-right">
-                    <a href="#">Our Service</a>
-                    <a href="#">Why Us</a>
-                    <a href="#">Testimonial</a>
-                    <a href="#">FAQ</a>
-                    <a href="#"><span>Register</span></a>
+                <div class="container-navbar">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <div class="blue"></div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body header-right">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Our Service</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Why Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Testimonial</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">FAQ</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" aria-current="page" href="#"><span style="background-color: #5CB85F;
+                                                padding: 7px 14px;
+                                                border-radius: 3px;
+                                                color: white;">Register</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </section>
 
         <section id="hero">
-            <div class="row">
-                <div class="col text">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-6 text">
                     <h1 class="title">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
                     <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga
                         terjangkau.
                         Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
                     <button type="button" class="btn btn-secondary">Mulai Sewa Mobil</button>
                 </div>
-                <div class="col">
-                    <img src="./asset/img_car.png" style="height: 550px; width: 950px">
+                <div class="col-sm-12 col-lg-6" align="center">
+                    <div style="width: 100%;">
+                        <img src="./asset/img_car.png" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </section>
     </header>
-
     <main>
         <section id="our-service">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col" align="center">
-                        <img src="./asset/img_service.png" style="height: 450px; width: 500px">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div style="width: 100%;">
+                            <img src="./asset/img_service.png" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-lg-6">
                         <h2>Best Car Rental for any kind of trip in (Lokasimu)!</h2>
                         <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang
                             lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
@@ -71,43 +106,43 @@
             <div class="container">
                 <h2>Why Us?</h2>
                 <p style="padding: 15px 0; font-size: 18px;">Mengapa harus pilih Binar Car Rental?</p>
-                <div class="row justify-content-center">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 ct">
                         <div class="card-pro">
                             <div class="card-content">
                                 <img src="./asset/icon_complete.png">
                                 <h3>Mobil Lengkap</h3>
-                                <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
+                                <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
                                     terawat</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 ct">
                         <div class="card-pro">
                             <div class="card-content">
                                 <img src="./asset/icon_price.png">
                                 <h3>Harga Murah</h3>
-                                <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental
+                                <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental
                                     mobil lain</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 ct">
                         <div class="card-pro">
                             <div class="card-content">
                                 <img src="./asset/icon_24hrs.png">
                                 <h3>Layanan 24 Jam</h3>
-                                <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
+                                <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
                                     tersedia di akhir minggu</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 ct">
                         <div class="card-pro">
                             <div class="card-content">
                                 <img src="./asset/icon_professional.png">
                                 <h3>Sopir Profesional</h3>
-                                <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu
+                                <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu
                                     tepat waktu</p>
                             </div>
                         </div>
@@ -121,7 +156,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col d-flex justify-content-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
                                 <div class="card-testi">
                                     <div class="card-content">
                                         <div class="row d-flex align-content-center flex-wrap">
@@ -142,7 +177,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
                                 <div class="card-testi">
                                     <div class="card-content">
                                         <div class="row d-flex align-content-center flex-wrap">
@@ -163,74 +198,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center">
-                                <div class="card-testi">
-                                    <div class="card-content">
-                                        <div class="row d-flex align-content-center flex-wrap">
-                                            <div class="col-3 d-flex align-content-center flex-wrap">
-                                                <img src="./asset/icon_professional.png">
-                                            </div>
-                                            <div class="col-9 d-flex align-content-center flex-wrap">
-                                                <h3>Sopir Profesional</h3>
-                                                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit,
-                                                    sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit, sed
-                                                    do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                    sed do
-                                                    eiusmod”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col d-flex justify-content-center">
-                                <div class="card-testi">
-                                    <div class="card-content">
-                                        <div class="row d-flex align-content-center flex-wrap">
-                                            <div class="col-3 d-flex align-content-center flex-wrap">
-                                                <img src="./asset/icon_professional.png">
-                                            </div>
-                                            <div class="col-9 d-flex align-content-center flex-wrap">
-                                                <h3>Sopir Profesional</h3>
-                                                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit,
-                                                    sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit, sed
-                                                    do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                    sed do
-                                                    eiusmod”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center">
-                                <div class="card-testi">
-                                    <div class="card-content">
-                                        <div class="row d-flex align-content-center flex-wrap">
-                                            <div class="col-3 d-flex align-content-center flex-wrap">
-                                                <img src="./asset/icon_professional.png">
-                                            </div>
-                                            <div class="col-9 d-flex align-content-center flex-wrap">
-                                                <h3>Sopir Profesional</h3>
-                                                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit,
-                                                    sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit, sed
-                                                    do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                    sed do
-                                                    eiusmod”</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-flex justify-content-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
                                 <div class="card-testi">
                                     <div class="card-content">
                                         <div class="row d-flex align-content-center flex-wrap">
@@ -255,7 +223,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col d-flex justify-content-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
                                 <div class="card-testi">
                                     <div class="card-content">
                                         <div class="row d-flex align-content-center flex-wrap">
@@ -276,7 +244,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
                                 <div class="card-testi">
                                     <div class="card-content">
                                         <div class="row d-flex align-content-center flex-wrap">
@@ -297,7 +265,74 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-center">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="card-testi">
+                                    <div class="card-content">
+                                        <div class="row d-flex align-content-center flex-wrap">
+                                            <div class="col-3 d-flex align-content-center flex-wrap">
+                                                <img src="./asset/icon_professional.png">
+                                            </div>
+                                            <div class="col-9 d-flex align-content-center flex-wrap">
+                                                <h3>Sopir Profesional</h3>
+                                                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed
+                                                    do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do
+                                                    eiusmod”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="card-testi">
+                                    <div class="card-content">
+                                        <div class="row d-flex align-content-center flex-wrap">
+                                            <div class="col-3 d-flex align-content-center flex-wrap">
+                                                <img src="./asset/icon_professional.png">
+                                            </div>
+                                            <div class="col-9 d-flex align-content-center flex-wrap">
+                                                <h3>Sopir Profesional</h3>
+                                                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed
+                                                    do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do
+                                                    eiusmod”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                                <div class="card-testi">
+                                    <div class="card-content">
+                                        <div class="row d-flex align-content-center flex-wrap">
+                                            <div class="col-3 d-flex align-content-center flex-wrap">
+                                                <img src="./asset/icon_professional.png">
+                                            </div>
+                                            <div class="col-9 d-flex align-content-center flex-wrap">
+                                                <h3>Sopir Profesional</h3>
+                                                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit,
+                                                    sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit, sed
+                                                    do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                    sed do
+                                                    eiusmod”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
                                 <div class="card-testi">
                                     <div class="card-content">
                                         <div class="row d-flex align-content-center flex-wrap">
@@ -346,13 +381,13 @@
         <section id="faq">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-sm-12 col-lg-6">
                         <h2>Frequently Asked Question</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna aliqua.</p>
                     </div>
-                    <div class="col-7">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
@@ -365,73 +400,78 @@
                                 <div id="flush-collapseOne" class="accordion-collapse collapse"
                                     aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                        accordion body.</div>
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item's accordion body.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
+                                <h2 class="accordion-header" id="flush-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
                                         Berapa hari minimal sewa mobil lepas kunci?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                        accordion body.</div>
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item's accordion body. Let's imagine this being filled with some actual
+                                        content.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
+                                <h2 class="accordion-header" id="flush-headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
                                         Berapa hari sebelumnya sabaiknya booking sewa mobil?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                        accordion body.</div>
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item's accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
+                                <h2 class="accordion-header" id="flush-headingFour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
                                         Apakah Ada biaya antar-jemput?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                        accordion body.</div>
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item's accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
+                                <h2 class="accordion-header" id="flush-headingFive">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                        aria-controls="flush-collapseOne">
-                                        Bagaimana jika terjadi kecelakaan
+                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                        Bagaimana jika terjadi kecelakaan?
                                     </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">Placeholder content for this accordion, which is
-                                        intended to
-                                        demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                        accordion body.</div>
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item's accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
                                 </div>
                             </div>
                         </div>
@@ -445,18 +485,18 @@
         <section id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-sm-12 col-lg-3">
                         <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
                         <p>binarcarrental@gmail.com</p>
                         <P>081-233-334-808</P>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-sm-12 col-lg-3">
                         <p>Our services</p>
                         <p>Why Us</p>
                         <P>Testimonial</P>
                         <p>FAQ</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-12 col-lg-3">
                         <p>Connect with us</p>
                         <div class="row">
                             <div class="col">
@@ -476,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-sm-12 col-lg-3">
                         <p>Copyright Binar 2022</p>
                         <div class="blue"></div>
                     </div>

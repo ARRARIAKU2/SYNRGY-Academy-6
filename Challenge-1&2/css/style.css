@@ -1,13 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+
 #header {
     background-color: #F1F3FF;
-    height: 90px;
     width: 100%;
     position: fixed;
 }
 
 #header .header-left {
     float: left;
-    padding: 25px 0;
 }
 
 #header .container {
@@ -23,11 +25,10 @@
 
 #header .header-right {
     float: right;
-    padding-top: 28px;
 }
 
 #header .header-right a {
-    padding: 25px;
+    padding: 10px 20px;
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -37,38 +38,28 @@
     color: #3C3C3C;
 }
 
-#header span {
-    background-color: #5CB85F;
-    padding: 7px 14px;
-    border-radius: 3px;
-    color: white;
-}
-
 #header span:hover {
     background-color: #72e276;
 }
 
-
 #hero {
-    background-color: #F1F3FF;
-    height: 650px;
-    width: 100%;
     padding-top: 100px;
+    background-color: #F1F3FF;
+    width: 100vw;
 }
 
 #hero .text {
-    padding: 100px 200px;
+    padding-left: 100px;
 }
 
 #hero .title {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 #hero p {
-    font-size: 18px;
+    font-size: 1rem;
     padding: 20px 0;
-    width: 500px;
 }
 
 #hero .btn {
@@ -82,12 +73,13 @@
 }
 
 #our-service {
-    margin: 150px 0;
+    padding: 50px 0;
 }
 
 #our-service h2 {
     font-size: 28px;
     padding: 25px 0;
+    font-weight: bold;
 }
 
 #our-service p {
@@ -103,14 +95,13 @@
 }
 
 #why-us h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 #why-us .card-pro {
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 15px 15px 15px 15px;
-    height: 225px;
-    width: 300px;
+    width: 100%;
 }
 
 #why-us .card-content {
@@ -127,7 +118,7 @@
 }
 
 #testimonial {
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 
 #testimonial .carousel-item {
@@ -145,33 +136,33 @@
 }
 
 #testimonial img {
-    padding: 50px 50px;
+    padding: 50px 20px;
 }
 
 #cta-banner .container {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #0D28A6;
-    height: 350px;
+    height: auto;
     width: 100%;
     border-radius: 10px;
 }
 
 #cta-banner h2 {
-    padding: 50px 0;
+    padding: 25px 0;
     color: white;
     font-size: 2rem;
 }
 
 #cta-banner p {
-    padding-bottom: 25px;
+    padding: 25px 0;
     color: white;
     font-size: 1rem;
     height: 2.5rem;
 }
 
 #cta-banner .btn.btn-secondary {
-    margin-top: 10px;
+    margin: 25px 0;
     background-color: #5CB85F;
     border: none;
     font-size: 20px;
@@ -194,4 +185,62 @@
     border-radius: 5px;
     height: 34px;
     width: 100px;
+}
+
+@media (max-width: 768px) {
+    #hero .text {
+        padding: 40px;
+    }
+
+    #hero .title {
+        font-size: 3rem;
+    }
+
+    #our-service {
+        padding: 20px;
+    }
+
+    #why-us {
+        margin: 50px 0;
+    }
+
+    #why-us h2 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #why-us p {
+        text-align: center;
+    }
+
+    #why-us .ct {
+        text-align: center;
+    }
+
+    #cta-banner {
+        margin: 0 20px;
+    }
+
+    #cta-banner .btn.btn-secondary {
+        margin: 50px 0;
+    }
+
+    #faq {
+        padding: 0 20px;
+    }
+
+    #faq h2 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #faq p {
+        text-align: center;
+    }
+
+    #footer {
+        padding: 20px;
+    }
 }
