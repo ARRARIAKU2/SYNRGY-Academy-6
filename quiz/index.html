@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <div>
+        <p>1. What is the capital of France?</p>
+        <label> <input type="radio" name="q1" value="paris" /> Paris </label>
+        <label> <input type="radio" name="q1" value="london" /> London </label>
+        <label> <input type="radio" name="q1" value="berlin" /> Berlin </label>
+      </div>
+
+      <!-- Question 2 -->
+      <div>
+        <p>2. Which planet is known as the Red Planet?</p>
+        <label> <input type="radio" name="q2" value="earth" /> Earth </label>
+        <label> <input type="radio" name="q2" value="mars" /> Mars </label>
+        <label> <input type="radio" name="q2" value="venus" /> Venus </label>
+      </div>
+
+      <!-- Question 3 -->
+      <div>
+        <p>3. What is the largest mammal in the world?</p>
+        <label>
+          <input type="radio" name="q3" value="elephant" /> Elephant
+        </label>
+        <label>
+          <input type="radio" name="q3" value="blue-whale" /> Blue Whale
+        </label>
+        <label>
+          <input type="radio" name="q3" value="giraffe" /> Giraffe
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="quiz-results" style="display: none">
+      <h2>Quiz Results</h2>
+      <p id="score">Your Score:</p>
+    </div>
+
+    <script src="/app.js" type="text/javascript"></script>
+  </body>
+</html>
