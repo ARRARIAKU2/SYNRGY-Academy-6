@@ -1,7 +1,7 @@
 function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 class Binar {
@@ -55,8 +55,8 @@ document.getElementById('btn-search').addEventListener('click', function () {
   const selectedTanggal = new Date(selectedTanggalInput); // Convert the input value to a Date object
   const selectedJemput = document.getElementById('jemput').value;
   const selectedJmlPenumpang = document.getElementById('jmlPenumpang').value;
-  
-  
+
+
   // mengubah format time di json 
   function formatTime(date) {
     const hours = date.getHours().toString().padStart(2, '0');
