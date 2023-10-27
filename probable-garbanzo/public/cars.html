@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Cars</title>
+</head>
+<body>
+    <section id="search">
+        <form id="search-form" method="get">
+          <label for="tanggal">Tanggal</label>
+          <input id="tanggal" name="tanggal" type="date" placeholder="Tanggal" required>
+
+          <label for="waktu">Waktu Ambil</label>
+          <select name="waktu" id="waktu" required>
+            <option value="">Pilih Waktu Ambil Mobil</option>
+            <option value="8">08:00</option>
+            <option value="12">12:00</option>
+            <option value="15">15:00</option>
+          </select>
+
+          <button type="submit">
+            Cari Mobil
+          </button>
+        </form>
+      </section>
+
+      <section id="result">
+        
+      </section>
+
+      <script src="scripts/main.js"></script>
+
+</body>
+</html>
