@@ -33,7 +33,7 @@ import db from '../../../config/database';
   router.get('/:id', async (req: Request, res: Response) => {
     try {
       const id = req.params.id;
-      const data = await db.select('*').from('books').where('books_id', '=', id);
+      const data = await db.select('*').from('cars').where('car_id', '=', id);
 
       res.status(200).json({
         data: data[0],
@@ -62,7 +62,7 @@ import db from '../../../config/database';
       const picture = pictureUrl.url;
 
       const {title, price, create_at, update_at } = req.body;
-      const data = await db('books').insert({
+      const data = await db('cars').insert({
         title: title,
         price: price,
         create_at: create_at,
@@ -108,7 +108,7 @@ import db from '../../../config/database';
       const picture = (await pictureUrl).url;
 
       const {title, price, create_at, update_at } = req.body;
-      const data = await db('books').where('books_id', '=', id).update({
+      const data = await db('cars').where('car_id', '=', id).update({
         title: title,
         price: price,
         create_at: create_at,
@@ -135,7 +135,7 @@ import db from '../../../config/database';
   router.delete('/:id', async (req: Request, res: Response) => {
     try {
       const id = req.params.id;
-      const data = await db('books').where('books_id', '=', id).del();
+      const data = await db('cars').where('car_id', '=', id).del();
 
       res.status(201).json({
         message: "Delete Success!",
