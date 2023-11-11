@@ -1,7 +1,8 @@
 import express, { Request, Response } from 'express';
 import storage from '../../../storage';
 import upload from '../../../upload';
-import db from '../../../config/database';
+// import db from '../../../config/database';
+import db from '../../../db/knex';
 
 // /api/books
   const router = express.Router(); // instance dari function Router
@@ -61,22 +62,22 @@ import db from '../../../config/database';
   
       const picture = pictureUrl.url;
 
-      const {title, price, create_at, update_at } = req.body;
+      const {title, price, created_at, updated_at } = req.body;
       const data = await db('cars').insert({
         title: title,
         price: price,
-        create_at: create_at,
-        update_at: update_at,
-        picture: picture
+        picture: picture,
+        created_at: created_at,
+        updated_at: updated_at,
       });
   
       res.status(201).json({
         message: "Create Success!",
         title,
         price,
-        create_at,
-        update_at,
-        picture
+        picture,
+        created_at,
+        updated_at,
       });
   
     } catch (error) {
@@ -107,22 +108,22 @@ import db from '../../../config/database';
 
       const picture = (await pictureUrl).url;
 
-      const {title, price, create_at, update_at } = req.body;
+      const {title, price, created_at, updated_at } = req.body;
       const data = await db('cars').where('car_id', '=', id).update({
         title: title,
         price: price,
-        create_at: create_at,
-        update_at: update_at,
-        picture: picture
+        picture: picture,
+        created_at: created_at,
+        updated_at: updated_at,
       });
 
       res.status(201).json({
         message: "Update Success!",
         title,
         price,
-        create_at,
-        update_at,
-        picture
+        picture,
+        created_at,
+        updated_at,
       });
     } catch (error) {
       res.status(400).json({
