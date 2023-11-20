@@ -1,13 +1,13 @@
-const messageContainer = document.getElementById('message-container');
-const formUpload = document.getElementById('form-upload');
-const preview = document.getElementById('preview');
-const inputFile = document.getElementById('input-file');
-const btnSubmit = document.getElementById('btn-submit');
+const messageContainer : HTMLElement | null = document.getElementById('message-container');
+const formUpload : HTMLFormElement | null = document.getElementById('form-upload') as HTMLFormElement;
+const preview : HTMLElement | null = document.getElementById('preview');
+const inputFile : HTMLInputElement | null = document.getElementById('input-file') as HTMLInputElement;
+const btnSubmit : HTMLElement | null = document.getElementById('btn-submit');
 
-formUpload.addEventListener('submit', handleSubmitFormUpload);
-inputFile.addEventListener('change', handleChangeInputFile);
+formUpload?.addEventListener('submit', handleSubmitFormUpload);
+inputFile?.addEventListener('change', handleChangeInputFile);
 
-function renderMessage(type, response) {
+function renderMessage(type: string, response: {message: string, url?: string}) {
     const { message, url } = response;
     const messageElement = document.createElement('div');
     const linkElement = document.createElement('a');
@@ -15,18 +15,19 @@ function renderMessage(type, response) {
         messageElement.classList.add('success');
         messageElement.innerText = message;
         linkElement.innerText = "Download File";
-        linkElement.setAttribute('href', url);
+        linkElement.setAttribute('href', url || '');
     } else {
         messageElement.classList.add('failed');
         messageElement.innerText = message;
         linkElement.innerText = "Try Again";
     };
-    messageContainer.appendChild(messageElement)
-    messageContainer.appendChild(linkElement);
+    messageContainer?.appendChild(messageElement)
+    messageContainer?.appendChild(linkElement);
 };
 
-function handleChangeInputFile(e) {
-    const files = e.target.files;
+function handleChangeInputFile(e: Event) {
+    const target = e.target as HTMLInputElement;
+    const files = target.files;
     if (files && files.length > 0) {
 
         const file = files[0];
@@ -40,32 +41,41 @@ function handleChangeInputFile(e) {
             const element = document.createElement('img');
             element.setAttribute('src', URL.createObjectURL(files[0]));
             element.setAttribute('style', "width: 200px");
-            preview.appendChild(element);
+            preview?.appendChild(element);
         } else {
             alert('hanya gambar yang boleh')
-            e.target.value = ``;
+            target.value = ``;
         };
     };
 };
 
-async function handleSubmitFormUpload(e) {
+async function handleSubmitFormUpload(e: Event) {
     e.preventDefault();
-    btnSubmit.innerText = 'Loading...';
-    try {
-        const formData = new FormData(formUpload);
-        console.log(formData);
-        const response = await fetch('/api/books/', {
-            method: 'post',
-            body: formData,
-        });
-        const responseData = await response.json();
-        btnSubmit.innerText = 'Upload';
-        renderMessage('success', responseData);
-    } catch (error) {
-        btnSubmit.innerText = 'Submit';
-        renderMessage('failed', { message: "Error submit form nya", url: '' });
-    } finally {
-        btnSubmit.innerText = 'Submit';
+    if (btnSubmit) {
+      btnSubmit.innerText = 'Loading...';
     }
-};
+  
+    try {
+      const formData = new FormData(formUpload!);
+      console.log(formData);
+      const response = await fetch('/api/books/', {
+        method: 'post',
+        body: formData,
+      });
+      const responseData = await response.json();
+      if (btnSubmit) {
+        btnSubmit.innerText = 'Upload';
+      }
+      renderMessage('success', responseData);
+    } catch (error) {
+      if (btnSubmit) {
+        btnSubmit.innerText = 'Submit';
+      }
+      renderMessage('failed', { message: 'Error submit form nya', url: '' });
+    } finally {
+      if (btnSubmit) {
+        btnSubmit.innerText = 'Submit';
+      }
+    }
+  }
 
