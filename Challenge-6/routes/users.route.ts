@@ -11,9 +11,9 @@ class ApiUsers {
 
   routes() {
     this.router.get("/", Auth.Auth, ControllerUsers.getUsers);
-    this.router.get("/:id", ControllerUsers.getUser);
-    this.router.put("/:id", ControllerUsers.updateUser);
-    this.router.delete("/:id", ControllerUsers.deleteUser);
+    this.router.get("/:id", Auth.Auth, ControllerUsers.getUser);
+    this.router.put("/:id", Auth.Auth, ControllerUsers.updateUser);
+    this.router.delete("/:id", Auth.Auth, ControllerUsers.deleteUser);
 
     return this.router;
   }

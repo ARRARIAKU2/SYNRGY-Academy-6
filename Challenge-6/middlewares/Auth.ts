@@ -26,6 +26,7 @@ class Authorization {
         message: "Unauthorized",
       });
     }
+
     (req as AuthenticatedRequest).user = decoded;
     next();
   }

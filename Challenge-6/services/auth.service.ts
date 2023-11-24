@@ -43,7 +43,7 @@ class ServiceAuth {
 
   generateToken(data: any) {
     try {
-      const token = Jwt.sign(data, JWT_KEY, { expiresIn: "1h" });
+      const token = Jwt.sign(data, JWT_KEY, { expiresIn: "5m" });
       return token;
     } catch (error) {
       return error;
