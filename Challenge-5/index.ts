@@ -51,7 +51,3 @@ try {
 } catch (error) {
   console.error("Unable to connect to the Server:", error);
 }
-
-// app.listen(PORT, () => {
-//   console.log(`Server is running on http://localhost:${PORT}`);
-// });
