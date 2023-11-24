@@ -1,0 +1,445 @@
+openapi: 3.0.3
+info:
+  title: Challenge 6 - Open API
+  description: Challenge 6
+  version: 1.0.11
+servers:
+  - url: /
+tags:
+  - name: user
+    description: Operations about user
+  - name: car
+    description: Everything about your Pets
+  - name: auth
+    description: Access to Petstore orders
+paths:
+  /api/users:
+    get:
+      tags:
+        - user
+      summary: Get All user
+      operationId: createUser
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/User"
+      x-swagger-router-controller: User
+  /api/users/{id}:
+    get:
+      tags:
+        - user
+      summary: Get user by ID
+      description: ""
+      operationId: getUserByName
+      parameters:
+        - name: id
+          in: path
+          description: "The name that needs to be fetched. Use user1 for testing. "
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/User"
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      x-swagger-router-controller: User
+    put:
+      tags:
+        - user
+      summary: Update user
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters:
+        - name: id
+          in: path
+          description: name that need to be deleted
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      requestBody:
+        description: Update an existent user in the store
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        default:
+          description: successful operation
+      x-swagger-router-controller: User
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: id
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: User not found
+      x-swagger-router-controller: User
+  /api/cars:
+    get:
+      tags:
+        - car
+      summary: Get All car
+      operationId: getCars
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Car"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Car"
+      x-swagger-router-controller: Car
+    post:
+      tags:
+        - car
+      summary: Create Car
+      operationId: createCar
+      requestBody:
+        description: Get All user object
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Car"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Car"
+      x-swagger-router-controller: Car
+  /api/cars/{id}:
+    get:
+      tags:
+        - car
+      summary: Get car by ID
+      description: ""
+      operationId: getcarByid
+      parameters:
+        - name: id
+          in: path
+          description: "The name that needs to be fetched. Use user1 for testing. "
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Car"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Car"
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: Car not found
+      x-swagger-router-controller: Car
+    put:
+      tags:
+        - car
+      summary: Update car
+      description: This can only be done by the logged in car.
+      operationId: updatecar
+      parameters:
+        - name: id
+          in: path
+          description: name that need to be deleted
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      requestBody:
+        description: Update an existent user in the store
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Car"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/Car"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/Car"
+      responses:
+        default:
+          description: successful operation
+      x-swagger-router-controller: Car
+    delete:
+      tags:
+        - car
+      summary: Delete car
+      description: This can only be done by the logged in user.
+      operationId: deleteCar
+      parameters:
+        - name: id
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "400":
+          description: Invalid username supplied
+        "404":
+          description: Car not found
+      x-swagger-router-controller: Car
+  /api/login:
+    post:
+      tags:
+        - auth
+      summary: Login
+      operationId: login
+      requestBody:
+        description: Get All user object
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Login"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/Login"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/Login"
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Login"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Login"
+      x-swagger-router-controller: Auth
+  /api/member:
+    post:
+      tags:
+        - auth
+      summary: Create member
+      operationId: memberId
+      requestBody:
+        description: Create Member
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/User"
+      x-swagger-router-controller: Auth
+  /api/admin:
+    post:
+      tags:
+        - auth
+      summary: Create admin
+      operationId: memberId
+      requestBody:
+        description: Create Member
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/User"
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        default:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/User"
+      x-swagger-router-controller: Auth
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        username:
+          type: string
+          example: alana
+        email:
+          type: string
+          example: john@email.com
+        password:
+          type: string
+          example: "12345"
+        role:
+          type: string
+          example: admin
+        created_at:
+          type: string
+          example: 23-23-23
+        updated_at:
+          type: string
+          example: 23-23-23
+      example:
+        password: "12345"
+        role: admin
+        updated_at: 23-23-23
+        created_at: 23-23-23
+        id: 10
+        email: john@email.com
+        username: alana
+      xml:
+        name: user
+    Car:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        created_by:
+          type: string
+          example: alana
+        title:
+          type: string
+          example: BMW
+        price:
+          type: string
+          example: "10000"
+        picture:
+          type: string
+          example: url
+        available:
+          type: boolean
+          example: true
+        status:
+          type: string
+          example: available
+        deleted_by:
+          type: string
+          example: alana
+        edited_by:
+          type: string
+          example: qodri
+        created_at:
+          type: string
+          example: 23-23-23
+        updated_at:
+          type: string
+          example: 23-23-23
+      example:
+        updated_at: 23-23-23
+        price: "10000"
+        available: true
+        deleted_by: alana
+        created_at: 23-23-23
+        id: 10
+        title: BMW
+        created_by: alana
+        picture: url
+        edited_by: qodri
+        status: available
+      xml:
+        name: user
+    Login:
+      type: object
+      properties:
+        username:
+          type: string
+          example: alana
+        password:
+          type: string
+          example: BMW
+      example:
+        password: BMW
+        username: alana
+      xml:
+        name: user
+  securitySchemes:
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://petstore3.swagger.io/oauth/authorize
+          scopes:
+            write:pets: modify pets in your account
+            read:pets: read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
