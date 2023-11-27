@@ -1,6 +1,6 @@
 class App {
   constructor() {
-    this.offCanvass = document.getElementById("offCanvass");
+    // this.offCanvass = document.getElementById("offCanvass");
     this.date = document.getElementById("tanggal");
     this.time = document.getElementById("jemput");
     this.passenger = document.getElementById("jmlPenumpang");
@@ -18,7 +18,7 @@ class App {
 
   run = () => {
     this.clear();
-    this.offCanvass.style.display = "none";
+    // this.offCanvass.style.display = "none";
     const filter = {
       dateTime: new Date(`${this.date.value}T${this.time.value}`),
       passenger: this.passenger.value,
