@@ -20,7 +20,8 @@ const server = (req, res) => {
 
     const isJs = url.includes('/scripts');
     const isCss = url.includes('/css');
-    const isImage = url.includes('/asset');
+    const isAsset = url.includes('/asset');
+    const isImage = url.includes('/images');
 
     if (url === '/') {
         res.end(getContent('index.html'));
@@ -31,6 +32,8 @@ const server = (req, res) => {
     } else if (isCss) {
         res.end(getContent(url));
     } else if (isImage) {
+        res.end(getContent(url));
+    } else if (isAsset) {
         res.end(getContent(url));
     } else {
         res.end('page not found');
