@@ -3,6 +3,7 @@ import path from "path";
 import dotenv from "dotenv";
 import SwaggerUI from "swagger-ui-express";
 import YAML from "yamljs";
+import cors from "cors";
 
 import db from "./database/sequelize/sequelize";
 import ApiCars from "./routes/cars.route";
@@ -25,6 +26,7 @@ class Server {
 
     this.app.set("view engine", "ejs");
     this.app.use(express.static(PUBLIC_DIR));
+    this.app.use(cors());
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
 
