@@ -1,0 +1,502 @@
+[
+  {
+    "title": "Trash Humpers",
+    "author": "Orton",
+    "copies_available": 1,
+    "genre": "Drama",
+    "isbn": "563870307-1",
+    "published_year": 2005,
+    "total_copies": 1,
+    "published": false
+  },
+  {
+    "title": "Super Size Me",
+    "author": "Carleton",
+    "copies_available": 2,
+    "genre": "Comedy|Documentary|Drama",
+    "isbn": "873581755-0",
+    "published_year": 1987,
+    "total_copies": 2,
+    "published": false
+  },
+  {
+    "title": "Tune in Tomorrow...",
+    "author": "Gaylor",
+    "copies_available": 3,
+    "genre": "Comedy|Romance",
+    "isbn": "441721610-X",
+    "published_year": 1993,
+    "total_copies": 3,
+    "published": false
+  },
+  {
+    "title": "Man in the Wilderness",
+    "author": "Dani",
+    "copies_available": 4,
+    "genre": "Adventure|Western",
+    "isbn": "952002406-9",
+    "published_year": 1993,
+    "total_copies": 4,
+    "published": false
+  },
+  {
+    "title": "Adventures of Ford Fairlane, The",
+    "author": "Giffer",
+    "copies_available": 5,
+    "genre": "Action|Comedy",
+    "isbn": "873512316-8",
+    "published_year": 2007,
+    "total_copies": 5,
+    "published": false
+  },
+  {
+    "title": "Marilyn: The Untold Story",
+    "author": "Lindsey",
+    "copies_available": 6,
+    "genre": "Documentary",
+    "isbn": "196793855-5",
+    "published_year": 2010,
+    "total_copies": 6,
+    "published": true
+  },
+  {
+    "title": "Herr Lehmann",
+    "author": "Tome",
+    "copies_available": 7,
+    "genre": "Comedy|Drama",
+    "isbn": "600523566-4",
+    "published_year": 2011,
+    "total_copies": 7,
+    "published": false
+  },
+  {
+    "title": "The Butterfly Effect",
+    "author": "Darrin",
+    "copies_available": 8,
+    "genre": "Drama|Sci-Fi|Thriller",
+    "isbn": "778313108-5",
+    "published_year": 1987,
+    "total_copies": 8,
+    "published": false
+  },
+  {
+    "title": "Jesse Stone: Sea Change",
+    "author": "Thacher",
+    "copies_available": 9,
+    "genre": "Crime|Drama",
+    "isbn": "027642051-9",
+    "published_year": 2009,
+    "total_copies": 9,
+    "published": true
+  },
+  {
+    "title": "Cat Concerto, The",
+    "author": "Richart",
+    "copies_available": 10,
+    "genre": "Animation|Children|Comedy",
+    "isbn": "474285311-3",
+    "published_year": 1994,
+    "total_copies": 10,
+    "published": true
+  },
+  {
+    "title": "Ten Thousand Saints",
+    "author": "Austen",
+    "copies_available": 11,
+    "genre": "Comedy|Drama",
+    "isbn": "920330949-7",
+    "published_year": 2006,
+    "total_copies": 11,
+    "published": false
+  },
+  {
+    "title": "Narco Cultura",
+    "author": "Taddeo",
+    "copies_available": 12,
+    "genre": "Documentary",
+    "isbn": "982816417-5",
+    "published_year": 1994,
+    "total_copies": 12,
+    "published": true
+  },
+  {
+    "title": "Day of the Falcon",
+    "author": "Oby",
+    "copies_available": 13,
+    "genre": "Adventure|Drama",
+    "isbn": "557067556-6",
+    "published_year": 1998,
+    "total_copies": 13,
+    "published": true
+  },
+  {
+    "title": "ATL",
+    "author": "Matthias",
+    "copies_available": 14,
+    "genre": "Drama",
+    "isbn": "261145986-X",
+    "published_year": 2007,
+    "total_copies": 14,
+    "published": true
+  },
+  {
+    "title": "Mr. Moto's Gamble",
+    "author": "Sidney",
+    "copies_available": 15,
+    "genre": "Crime|Drama|Mystery",
+    "isbn": "326617543-3",
+    "published_year": 2011,
+    "total_copies": 15,
+    "published": true
+  },
+  {
+    "title": "Valley of Head Hunters",
+    "author": "Hillier",
+    "copies_available": 16,
+    "genre": "Adventure",
+    "isbn": "604967019-6",
+    "published_year": 2004,
+    "total_copies": 16,
+    "published": true
+  },
+  {
+    "title": "Who Am I (Kein System Ist Sicher)",
+    "author": "Tonnie",
+    "copies_available": 17,
+    "genre": "Thriller",
+    "isbn": "117785935-1",
+    "published_year": 1998,
+    "total_copies": 17,
+    "published": false
+  },
+  {
+    "title": "Trust the Man",
+    "author": "Barnard",
+    "copies_available": 18,
+    "genre": "Comedy|Drama|Romance",
+    "isbn": "552021816-1",
+    "published_year": 2003,
+    "total_copies": 18,
+    "published": true
+  },
+  {
+    "title": "Troy",
+    "author": "Eward",
+    "copies_available": 19,
+    "genre": "Action|Adventure|Drama|War",
+    "isbn": "045021350-1",
+    "published_year": 2008,
+    "total_copies": 19,
+    "published": true
+  },
+  {
+    "title": "So Big!",
+    "author": "Zacherie",
+    "copies_available": 20,
+    "genre": "Drama",
+    "isbn": "402553853-9",
+    "published_year": 2000,
+    "total_copies": 20,
+    "published": false
+  },
+  {
+    "title": "King of Thorn (King of Thorns) (Ibara no O)",
+    "author": "Raff",
+    "copies_available": 21,
+    "genre": "Adventure|Animation|Horror|Sci-Fi|Thriller",
+    "isbn": "530795779-3",
+    "published_year": 2003,
+    "total_copies": 21,
+    "published": false
+  },
+  {
+    "title": "Zatoichi Challenged (Zatôichi chikemuri kaidô) (Zatôichi 17)",
+    "author": "Randall",
+    "copies_available": 22,
+    "genre": "Action|Drama",
+    "isbn": "449811932-0",
+    "published_year": 1997,
+    "total_copies": 22,
+    "published": true
+  },
+  {
+    "title": "Starship Invasions",
+    "author": "Bronnie",
+    "copies_available": 23,
+    "genre": "Sci-Fi",
+    "isbn": "716738402-X",
+    "published_year": 2000,
+    "total_copies": 23,
+    "published": false
+  },
+  {
+    "title": "Cat People",
+    "author": "Benson",
+    "copies_available": 24,
+    "genre": "Drama|Horror|Romance|Thriller",
+    "isbn": "638885346-3",
+    "published_year": 2003,
+    "total_copies": 24,
+    "published": false
+  },
+  {
+    "title": "Super Mario Bros.",
+    "author": "Kain",
+    "copies_available": 25,
+    "genre": "Action|Adventure|Children|Comedy|Fantasy|Sci-Fi",
+    "isbn": "197356990-6",
+    "published_year": 2008,
+    "total_copies": 25,
+    "published": false
+  },
+  {
+    "title": "Up the Yangtze",
+    "author": "Saunderson",
+    "copies_available": 26,
+    "genre": "Documentary",
+    "isbn": "164583657-6",
+    "published_year": 2009,
+    "total_copies": 26,
+    "published": true
+  },
+  {
+    "title": "Dirty Work",
+    "author": "Cassie",
+    "copies_available": 27,
+    "genre": "Comedy",
+    "isbn": "919864176-X",
+    "published_year": 1992,
+    "total_copies": 27,
+    "published": false
+  },
+  {
+    "title": "2012: Supernova",
+    "author": "Monroe",
+    "copies_available": 28,
+    "genre": "Action|Sci-Fi",
+    "isbn": "877165884-X",
+    "published_year": 1992,
+    "total_copies": 28,
+    "published": true
+  },
+  {
+    "title": "Orca: The Killer Whale",
+    "author": "Hervey",
+    "copies_available": 29,
+    "genre": "Action|Drama|Horror|Thriller",
+    "isbn": "803920471-2",
+    "published_year": 1985,
+    "total_copies": 29,
+    "published": false
+  },
+  {
+    "title": "Very Thought of You, The",
+    "author": "Aksel",
+    "copies_available": 30,
+    "genre": "Comedy|Romance",
+    "isbn": "379099717-X",
+    "published_year": 2002,
+    "total_copies": 30,
+    "published": true
+  },
+  {
+    "title": "Secret Life of Walter Mitty, The",
+    "author": "Arvy",
+    "copies_available": 31,
+    "genre": "Comedy|Romance|Thriller",
+    "isbn": "825415568-2",
+    "published_year": 1999,
+    "total_copies": 31,
+    "published": true
+  },
+  {
+    "title": "Jerichow",
+    "author": "Parrnell",
+    "copies_available": 32,
+    "genre": "Drama",
+    "isbn": "029215354-6",
+    "published_year": 2006,
+    "total_copies": 32,
+    "published": false
+  },
+  {
+    "title": "Taking Sides",
+    "author": "Dougie",
+    "copies_available": 33,
+    "genre": "Drama",
+    "isbn": "704499782-1",
+    "published_year": 2007,
+    "total_copies": 33,
+    "published": true
+  },
+  {
+    "title": "Happy New Year",
+    "author": "Harman",
+    "copies_available": 34,
+    "genre": "Comedy|Crime|Romance",
+    "isbn": "260137905-7",
+    "published_year": 2010,
+    "total_copies": 34,
+    "published": false
+  },
+  {
+    "title": "Only Yesterday (Omohide poro poro)",
+    "author": "Vassili",
+    "copies_available": 35,
+    "genre": "Animation|Drama",
+    "isbn": "143492603-6",
+    "published_year": 2007,
+    "total_copies": 35,
+    "published": true
+  },
+  {
+    "title": "Nasty Old People",
+    "author": "Tymon",
+    "copies_available": 36,
+    "genre": "Drama",
+    "isbn": "053433272-2",
+    "published_year": 2000,
+    "total_copies": 36,
+    "published": true
+  },
+  {
+    "title": "Aragami",
+    "author": "Hamil",
+    "copies_available": 37,
+    "genre": "Action|Fantasy|Horror",
+    "isbn": "662007016-7",
+    "published_year": 2008,
+    "total_copies": 37,
+    "published": false
+  },
+  {
+    "title": "Art of the Steal, The",
+    "author": "Elvin",
+    "copies_available": 38,
+    "genre": "Documentary",
+    "isbn": "015385508-8",
+    "published_year": 1992,
+    "total_copies": 38,
+    "published": true
+  },
+  {
+    "title": "Out to Sea",
+    "author": "Regan",
+    "copies_available": 39,
+    "genre": "Comedy",
+    "isbn": "827644188-2",
+    "published_year": 2003,
+    "total_copies": 39,
+    "published": false
+  },
+  {
+    "title": "Girl Cut in Two, The (Fille coupée en deux, La)",
+    "author": "Dolf",
+    "copies_available": 40,
+    "genre": "Drama|Thriller",
+    "isbn": "323837577-6",
+    "published_year": 2004,
+    "total_copies": 40,
+    "published": false
+  },
+  {
+    "title": "Cool Air",
+    "author": "Ambrose",
+    "copies_available": 41,
+    "genre": "Horror",
+    "isbn": "306773468-8",
+    "published_year": 1992,
+    "total_copies": 41,
+    "published": false
+  },
+  {
+    "title": "Catch and Release",
+    "author": "Thaine",
+    "copies_available": 42,
+    "genre": "Comedy|Drama|Romance",
+    "isbn": "403803439-9",
+    "published_year": 1985,
+    "total_copies": 42,
+    "published": true
+  },
+  {
+    "title": "Futurama: Into the Wild Green Yonder",
+    "author": "Berne",
+    "copies_available": 43,
+    "genre": "Action|Animation|Comedy|Sci-Fi",
+    "isbn": "748449030-X",
+    "published_year": 2006,
+    "total_copies": 43,
+    "published": false
+  },
+  {
+    "title": "Shinobi: Heart Under Blade",
+    "author": "Thorn",
+    "copies_available": 44,
+    "genre": "Action|Drama|Fantasy|Romance",
+    "isbn": "401398498-9",
+    "published_year": 2009,
+    "total_copies": 44,
+    "published": true
+  },
+  {
+    "title": "Stranger's Heart, A",
+    "author": "Jayson",
+    "copies_available": 45,
+    "genre": "Drama",
+    "isbn": "954677391-3",
+    "published_year": 1982,
+    "total_copies": 45,
+    "published": false
+  },
+  {
+    "title": "Parallels",
+    "author": "My",
+    "copies_available": 46,
+    "genre": "Sci-Fi",
+    "isbn": "841162290-8",
+    "published_year": 1993,
+    "total_copies": 46,
+    "published": false
+  },
+  {
+    "title": "Latitude Zero (Ido zero daisakusen)",
+    "author": "Trueman",
+    "copies_available": 47,
+    "genre": "Action|Adventure|Sci-Fi",
+    "isbn": "441755035-2",
+    "published_year": 1998,
+    "total_copies": 47,
+    "published": true
+  },
+  {
+    "title": "Panama Hattie",
+    "author": "Mikol",
+    "copies_available": 48,
+    "genre": "Comedy|Musical",
+    "isbn": "942546740-4",
+    "published_year": 2010,
+    "total_copies": 48,
+    "published": false
+  },
+  {
+    "title": "Shiro Amakusa, the Christian Rebel (Amakusa Shiro tokisada)",
+    "author": "Gunner",
+    "copies_available": 49,
+    "genre": "Drama|War",
+    "isbn": "532460778-9",
+    "published_year": 2002,
+    "total_copies": 49,
+    "published": true
+  },
+  {
+    "title": "Dukes, The",
+    "author": "Osborne",
+    "copies_available": 50,
+    "genre": "Comedy|Crime|Drama",
+    "isbn": "372350074-9",
+    "published_year": 1991,
+    "total_copies": 50,
+    "published": true
+  }
+]

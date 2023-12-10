@@ -1,4 +1,7 @@
 import { Knex } from "knex";
+import bcrypt from "bcrypt";
+
+const password: string = await bcrypt.hash("pakjo123", 10);
 
 export async function seed(knex: Knex): Promise<void> {
   // Deletes ALL existing entries
@@ -9,7 +12,7 @@ export async function seed(knex: Knex): Promise<void> {
     {
       username: "alana",
       email: "alana@yahoo.com",
-      password: "pakjo123",
+      password: password,
       role: "superadmin",
       created_at: new Date(),
       updated_at: new Date(),

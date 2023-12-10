@@ -1,0 +1,303 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Book Rental - Open API Docs 0.1",
+    "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about\nSwagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!\nYou can now help us improve the API whether it's by making changes to the definition itself or to the code.\nThat way, with time, we can improve the API in general, and expose some of the new features in OAS3.\n\n_If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_\n\nSome useful links:\n- [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)\n- [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.11"
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000/api"
+    }
+  ],
+  "tags": [
+    {
+      "name": "authentication",
+      "description": "Authentication features login and register-admin"
+    },
+    {
+      "name": "books",
+      "description": "Books Resources (CRUD)",
+      "externalDocs": {
+        "description": "Find out more about our store",
+        "url": "http://swagger.io"
+      }
+    },
+    {
+      "name": "user",
+      "description": "Operations about user"
+    }
+  ],
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "tags": ["authentication"],
+        "summary": "Login all users (member, superadmin and admin)",
+        "description": "Login all users (member, superadmin and admin)",
+        "operationId": "login",
+        "requestBody": {
+          "description": "Login all users (member, superadmin and admin)",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Authentication"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/Authentication"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthenticationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Idealnya contoh response untuk status ini ada dokumentasinya juga"
+          },
+          "404": {
+            "description": "Idealnya contoh response untuk status ini ada dokumentasinya juga"
+          },
+          "405": {
+            "description": "Idealnya contoh response untuk status ini ada dokumentasinya juga"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": ["write:pets", "read:pets"]
+          }
+        ]
+      }
+    },
+    "/auth/register-admin": {
+      "post": {
+        "tags": ["authentication"],
+        "summary": "registering a new admin user by superadmin",
+        "description": "registering a new admin user by superadmin",
+        "operationId": "updatePet",
+        "requestBody": {
+          "description": "registering a new admin user by superadmin",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterAdmin"
+              }
+            },
+
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterAdmin"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterAdminResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Pet not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/books": {
+      "get": {
+        "tags": ["books"],
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
+        "operationId": "findPetsByStatus",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Status values that need to be considered for filter",
+            "required": false,
+            "explode": true,
+            "schema": {
+              "type": "string",
+              "default": "available",
+              "enum": ["available", "pending", "sold"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pet"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pet"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": ["write:pets", "read:pets"]
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Authentication": {
+        "required": ["username", "password"],
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "example": "superadmin"
+          },
+          "password": {
+            "type": "string",
+            "example": "admin"
+          }
+        }
+      },
+      "RegisterAdmin": {
+        "required": ["username", "email", "password"],
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "example": "admin1"
+          },
+          "email": {
+            "type": "string",
+            "example": "admin@mail.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "12341234"
+          }
+        }
+      },
+      "RegisterAdminResponse": {
+        "required": ["username", "email", "password"],
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "example": "admin1"
+          },
+          "email": {
+            "type": "string",
+            "example": "admin@mail.com"
+          },
+          "password": {
+            "type": "string",
+            "example": "12341234"
+          }
+        }
+      },
+      "AuthenticationResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "string",
+            "example": "JWT Token"
+          },
+          "message": {
+            "type": "string",
+            "example": "login success"
+          }
+        }
+      }
+    },
+    "requestBodies": {
+      "Pet": {
+        "description": "Pet object that needs to be added to the store",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Pet"
+            }
+          },
+          "application/xml": {
+            "schema": {
+              "$ref": "#/components/schemas/Pet"
+            }
+          }
+        }
+      },
+      "UserArray": {
+        "description": "List of user object",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  }
+}

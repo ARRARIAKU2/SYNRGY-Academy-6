@@ -37,12 +37,12 @@ function Login() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/login", {
+      const response = await axios.post("http://localhost:8000/api/auth/login", {
         username,
         password,
       });
 
-      localStorage.setItem("token", response?.data?.token);
+      localStorage.setItem("token", response?.data?.data);
 
       setAlert({
         message: "Login success!",
