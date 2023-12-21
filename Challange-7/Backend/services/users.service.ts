@@ -1,10 +1,10 @@
 import usersKnex from "../models/users.knex";
-import usersSequelize from "../models/users.sequelize";
+// import usersSequelize from "../models/users.sequelize";
 
 import { IUser } from "../interfaces/interface";
 
 class ServiceUsers {
-  constructor() {}
+  constructor() { }
 
   async getUsers() {
     try {

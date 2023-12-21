@@ -13,7 +13,7 @@ class ApiLogin {
   routes() {
     this.router.post("/login", ControllerAuth.getLogin);
 
-    this.router.get("/user", ControllerUsers.getCurrentUser);
+    this.router.get("/user", Auth.Auth, ControllerUsers.getCurrentUser);
     this.router.post("/member", ControllerUsers.createUserMember);
 
     this.router.post(

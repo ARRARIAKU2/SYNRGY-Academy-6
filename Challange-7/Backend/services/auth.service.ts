@@ -2,12 +2,12 @@ import bcrypt from "bcrypt";
 import Jwt from "jsonwebtoken";
 
 import authKnex from "../models/auth.knex";
-import authSequelize from "../models/auth.sequelize";
+// import authSequelize from "../models/auth.sequelize";
 
 const JWT_KEY = "hehe";
 
 class ServiceAuth {
-  constructor() {}
+  constructor() { }
 
   async getLogin(params: any) {
     try {

@@ -5,10 +5,10 @@ import SwaggerUI from "swagger-ui-express";
 import YAML from "yamljs";
 import cors from "cors";
 
-import db from "./database/sequelize/sequelize";
+// import db from "./database/sequelize/sequelize";
 import ApiCars from "./routes/cars.route";
 import ApiUsers from "./routes/users.route";
-import ApiAuth from "./routes/auth.route";
+import ApiAuth from "./routes/auth.route"
 
 const swaggerDocument = YAML.load("./openapi.yaml");
 

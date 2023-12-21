@@ -6,7 +6,7 @@ import ServiceAuth from "../services/auth.service";
 import { IUser, UserController } from "../interfaces/interface";
 
 class ControllerUsers implements UserController {
-  constructor() {}
+  constructor() { }
 
   async getUsers(req: Request, res: Response) {
     try {
@@ -32,7 +32,7 @@ class ControllerUsers implements UserController {
   async getUser(req: Request, res: Response) {
     const id = req.params.id;
     try {
-      const user: any = (await ServiceUsers.getUser(id)) as IUser[];
+      const user = (await ServiceUsers.getUser(id)) as IUser[];
 
       if (user.length === 0) {
         res.status(404).json({
