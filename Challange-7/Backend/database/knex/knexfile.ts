@@ -17,13 +17,14 @@ class KnexConfigurator {
   };
   private commonConfig: Knex.Config = {
     client: "pg",
-    connection: {
-      host: process.env.DB_HOST || "localhost",
-      user: process.env.DB_USER || "postgres",
-      password: process.env.DB_PASSWORD || "docker",
-      database: process.env.DB_NAME || "postgres",
-      port: 5432,
-    },
+    // connection: {
+    //   host: process.env.DB_HOST || "localhost",
+    //   user: process.env.DB_USER || "postgres",
+    //   password: process.env.DB_PASSWORD || "docker",
+    //   database: process.env.DB_NAME || "postgres",
+    //   port: 5432,
+    // },
+    connection: "postgresql://postgres:Cabc1AGfCg6c-GBEaF*eE6-6EEFBegEc@monorail.proxy.rlwy.net:42413/railway",
     pool: {
       min: 2,
       max: 10,
