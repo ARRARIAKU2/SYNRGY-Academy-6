@@ -1,6 +1,6 @@
 # Challenge 8
 
-untuk sementara saya deploy di Railway dulu mas untuk database dan Backendnya karena di Fly.io databasenya masih error, dan untuk di railway ini, kadang hasil deploynya di removed oleh Railwaynya, jadi kalo mau nyoba kudu di Redeploy ulang
+untuk sementara saya deploy di Railway dulu mas untuk database dan Backendnya di Cyclic karena di Fly.io databasenya masih error, dan untuk di railway ini, kadang hasil deploynya di removed oleh Railwaynya, jadi kalo mau nyoba kudu di Redeploy ulang
 
 ### Login credential
 
@@ -10,6 +10,8 @@ password: pakjo123
 
 ## Tech Stack
 
-**Server:** https://challenge8-backend-production.up.railway.app/
+**Backend:** https://dull-pear-coati-vest.cyclic.app
 
-**Programming Language:** https://challenge8-frontend.vercel.app/
+**Backend:** https://challenge8-backend-production.up.railway.app/
+
+**Frontend:** https://challenge8-frontend.vercel.app/

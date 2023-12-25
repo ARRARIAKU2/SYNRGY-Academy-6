@@ -24,7 +24,8 @@ class KnexConfigurator {
     //   database: process.env.DB_NAME || "postgres",
     //   port: 5432,
     // },
-    connection: "postgres://backend_apps:hupjrODc48ClP6i@postgresql-app.flycast:5432/backend_apps?sslmode=disable",
+    // connection: "postgres://backend_apps:hupjrODc48ClP6i@postgresql-app.flycast:5432/backend_apps?sslmode=disable",
+    connection: "postgres://postgres:4eV6BvsLxzvOMj1@challange8.flycast:5432/postgres",
     pool: {
       min: 2,
       max: 10,
